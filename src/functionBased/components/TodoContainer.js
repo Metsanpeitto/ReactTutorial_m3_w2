@@ -1,17 +1,17 @@
-import React, { useState } from "react";
-import { v4 as uuidv4 } from "uuid";
-import { Route, Switch } from "react-router-dom";
-import Header from "./Header";
-import InputTodo from "./InputTodo";
-import TodosList from "./TodosList";
-import About from "../pages/About";
-import NotMatch from "../pages/NotMatch";
-import Navbar from "./Navbar";
+import React, { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
+import { Route, Switch } from 'react-router-dom';
+import Header from './Header';
+import InputTodo from './InputTodo';
+import TodosList from './TodosList';
+import About from '../pages/About';
+import NotMatch from '../pages/NotMatch';
+import Navbar from './Navbar';
 
 const TodoContainer = () => {
   function getInitialTodos() {
     // getting stored items
-    const temp = localStorage.getItem("todos");
+    const temp = localStorage.getItem('todos');
     const savedTodos = JSON.parse(temp);
     return savedTodos || [];
   }
@@ -19,17 +19,15 @@ const TodoContainer = () => {
   const [todos, setTodos] = useState(getInitialTodos());
 
   const handleChange = (id) => {
-    setTodos((prevState) =>
-      prevState.map((todo) => {
-        if (todo.id === id) {
-          return {
-            ...todo,
-            completed: !todo.completed,
-          };
-        }
-        return todo;
-      })
-    );
+    setTodos((prevState) => prevState.map((todo) => {
+      if (todo.id === id) {
+        return {
+          ...todo,
+          completed: !todo.completed,
+        };
+      }
+      return todo;
+    }));
   };
 
   const delTodo = (id) => {
@@ -48,11 +46,12 @@ const TodoContainer = () => {
   const setUpdate = (updatedTitle, id) => {
     setTodos(
       todos.map((todo) => {
+        const todo2 = todo;
         if (todo.id === id) {
-          todo.title = updatedTitle;
+          todo2.title = updatedTitle;
         }
-        return todo;
-      })
+        return todo2;
+      }),
     );
   };
 
