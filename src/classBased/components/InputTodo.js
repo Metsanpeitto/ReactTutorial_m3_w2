@@ -1,9 +1,9 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 class InputTodo extends Component {
   constructor(props) {
     super(props);
-    this.state = { title: "" };
+    this.state = { title: '' };
   }
 
   onChange = (e) => {
@@ -14,15 +14,16 @@ class InputTodo extends Component {
 
   handleSubmit = (e) => {
     const { title } = this.state;
+    // eslint-disable-next-line react/prop-types
     const { addTodoProps } = this.props;
     e.preventDefault();
     if (title.trim()) {
       addTodoProps(title);
       this.setState({
-        title: "",
+        title: '',
       });
     } else {
-      alert("Please write item");
+      alert('Please write item');
     }
   };
 

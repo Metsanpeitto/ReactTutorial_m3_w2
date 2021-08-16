@@ -1,5 +1,6 @@
-import React from "react";
-import TodoItem from "./TodoItem";
+import React from 'react';
+import PropTypes from 'prop-types';
+import TodoItem from './TodoItem';
 
 class TodosList extends React.Component {
   constructor(props) {
@@ -27,3 +28,6 @@ class TodosList extends React.Component {
 }
 
 export default TodosList;
+TodosList.propTypes = { handleChangeProps: PropTypes.func.isRequired };
+TodosList.propTypes = { deleteTodoProps: PropTypes.func.isRequired };
+TodosList.propTypes = { setUpdate: PropTypes.func.isRequired };
