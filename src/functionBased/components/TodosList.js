@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import TodoItem from './TodoItem';
 
 const TodosList = (props) => {
@@ -20,3 +21,7 @@ const TodosList = (props) => {
   );
 };
 export default TodosList;
+TodosList.propTypes = { todos: PropTypes.string.isRequired };
+TodosList.propTypes = { handleChangeProps: PropTypes.func.isRequired };
+TodosList.propTypes = { deleteTodoProps: PropTypes.func.isRequired };
+TodosList.propTypes = { setUpdate: PropTypes.func.isRequired };

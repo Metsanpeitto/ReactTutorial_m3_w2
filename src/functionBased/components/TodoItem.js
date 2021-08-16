@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { FaTrash } from 'react-icons/fa';
 import styles from './TodoItem.module.css';
 
@@ -7,7 +8,7 @@ const TodoItem = (props) => {
 
   useEffect(
     () => () => {
-      console.log('Cleaning up...');
+      // console.log('Cleaning up...');
     },
     [],
   );
@@ -72,3 +73,11 @@ const TodoItem = (props) => {
 };
 
 export default TodoItem;
+TodoItem.propTypes = { setUpdate: PropTypes.func.isRequired };
+TodoItem.propTypes = { handleChangeProps: PropTypes.func.isRequired };
+TodoItem.propTypes = { deleteTodoProps: PropTypes.func.isRequired };
+TodoItem.propTypes = { todo: PropTypes.number.isRequired };
+TodoItem.propTypes = { completed: PropTypes.bool.isRequired };
+TodoItem.propTypes = { id: PropTypes.string.isRequired };
+TodoItem.propTypes = { title: PropTypes.string };
+TodoItem.defaultProps = { title: '' };
