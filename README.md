@@ -1,70 +1,144 @@
-# Getting Started with Create React App
+# ReactTutorial_m3_w2
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Microverse](https://img.shields.io/badge/Microverse-blueviolet)
 
-## Available Scripts
+In this exercise, I'm going to consolidate my knowledge about React, components, props, state, and hooks, by following a tutorial.
 
-In the project directory, you can run:
+=======
 
-### `yarn start`
+## Built With 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- HTML/CSS
+- React.JS
+- Node.JS
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+=======
 
-### `yarn test`
+### Project requirements
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+You will follow the tutorial: React Tutorial From Scratch: A Step-by-Step Guide (2021), where you will develop a To do app!
+This tutorial, divided into several parts, is very comprehensive, and covers all main concepts about React, from the very basics to some intermediate topics. Feel free to skip the parts you think you don't need, since you already learned about these topics. This tutorial is not a substitute, just a reinforcement of what you have learned.
+The tutorial is organized in the following sections:
+Part 1 - React tutorial: The beginner's guide to learning React in 2020.
+Part 2 - Working with React form and handling event.
+Part 3 – How to implement CSS in Reactjs app.
+Part 4 – How to edit to dos items.
+Part 5 – Persisting React state in local storage (Optional).
+Part 6 – Getting started with React lifecycle methods.
+Part 7 – Getting started with React hooks.
+Part 8 – How to use SVG icons in React (Optional).
+Part 9 – Routing with React Router.
+Part 10 – How to add hamburger menu in React (Optiona).
+Part 11 – Deploying React app to GitHub Pages (Optional).
+Create a new repository work on a new branch (use Gitflow).
+Open a pull request with all your changes. Do not merge it - you will need it in the following exercise!
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+If you want a copy of this file go to the github repository and download it from there
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [`git clone https://github.com/Metsanpeitto/ReactTutorial_m3_w2`](https://github.com/Metsanpeitto/ReactTutorial_m3_w2)
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Live
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[Live](https://github.com/Metsanpeitto/ReactTutorial_m3_w2/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Setup
 
-## Learn More
+```cmd
+git clone  https://github.com/Metsanpeitto/ReactTutorial_m3_w2.git
+cd ./ReactTutorial_m3_w2
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Install
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```cmd
+npm install
+```
 
-### Code Splitting
+### Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```cmd
+npm start
+```
 
-### Analyzing the Bundle Size
+### Verify linters
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```cmd
+npx eslint .
+npx stylelint "**/*.{css,scss}"
+```
+- Autofix linters errors
 
-### Making a Progressive Web App
+```cmd
+npx eslint . --fix
+npx stylelint "**/*.{css,scss}" --fix
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## To run jest test
+```cmd
+npm run test
+npm run jest
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+If you are non a technical person you can download the zip file.
 
-### Deployment
+- To do that you have to go to the green button that says 'Code' and then press on it.
+- Choose the option 'Download Zip' and wait until it download.
+- Then you need to decompress it.
+- You will need to have Zip compress file software installed in your computer. If you don't have it you can download it from here
+  [`https://www.7-zip.org/download.html`](https://www.7-zip.org/download.html)
+- Do double click on the Capstone-1.zip and choose a folder where to place all teh decompressed files.
+- Once you are done decompressing, you can open the created folder.
+- In it you can double click on the index.html file and choose a browser to open it (For example google Chrome Browser).
+- Now you should be able to see the project.
+- Remember to use the mouse to navigate through the website. Also you can use the keys 'arrow up' and 'arrow down' of your keyboard
+  to scroll up and down.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `yarn build` fails to minify
+### Prerequisites
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Node.JS
+
+=======
+
+## Author
+
+👤 **Abraham Rodriguez**
+
+- GitHub: [@metsanpeitto](https://github.com/Metsanpeitto)
+- Twitter: [@metsanpeitto](https://twitter.com/home)
+- LinkedIn: [Abraham Rodriguez](https://www.linkedin.com/in/abraham-rodriguez-3283a319a/)
+- Portfolio: [Waldenberg](https://portfolio.waldenberginc.com)
+
+=======
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+=======
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+=======
+
+## Acknowledgments
+
+- Microverse for giving me this chance
+- The amazing code reviewers for making me improve every day :thumbsup:
+
+=======
+
+
+[![License: CC BY-NC 4.0](https://licensebuttons.net/l/by-nc/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc/4.0/)
+[![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)](http://creativecommons.org/publicdomain/zero/1.0/)
+
+
